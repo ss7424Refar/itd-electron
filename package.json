@@ -8,13 +8,11 @@
     "build-linux": "electron-packager ./ --out ./dist --platform=linux --arch=x64 --overwrite",
     "build-window": "electron-packager ./ --out ./dist --platform=win32 --arch=x64 --overwrite"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/ss7424Refar/itd-electron",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "app",
+    "start"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",

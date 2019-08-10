@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager ./ --out ./dist --platform=linux --arch=x64 --overwrite"
+    "build-linux": "electron-packager ./ --out ./dist --platform=linux --arch=x64 --overwrite",
+    "build-window": "electron-packager ./ --out ./dist --platform=win32 --arch=x64 --overwrite"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [

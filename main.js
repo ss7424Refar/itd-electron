@@ -11,7 +11,8 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     fullscreen: true,   // 默认全屏
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      zoomFactor: 0.75
     }
   })
 
@@ -24,8 +25,8 @@ function createWindow () {
 
   // and load the index.html of the app.
   // mainWindow.loadFile('index.html')
-
-  mainWindow.loadURL('http://localhost:8080/')
+  const options = {extraHeaders: 'pragma: no-cache\n'}
+  mainWindow.loadURL('http://localhost:8080/', options)
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 
